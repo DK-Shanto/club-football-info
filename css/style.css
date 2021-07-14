@@ -5,6 +5,8 @@
 body{
     font-family: 'Poppins', sans-serif;
     margin:0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Hero image division */
@@ -13,6 +15,7 @@ body{
     background-color: #2D25A0;
     width: 100%;
     height: 677px;
+    background-size: cover;
 }
 
 .hero-container{
@@ -73,20 +76,22 @@ body{
 }
 
 .players{
+    width: 1050px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-row-gap:30px;
-    margin-left: 120px;
-    margin-right: 80px;
+    grid-row-gap:27px;
+    grid-column-gap: 30px;
+    margin-left: 160px;
+    margin-right: 180px;
     margin-top:70px;
     margin-bottom: 100px;
+    
 }
 
 .player{
     width: 330px;
     height: 474px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-    padding:15px;
 }
 
 .player-info{
@@ -143,3 +148,94 @@ p{
     color: gray;
     font-size: 16px;
 }
+
+
+/* Online Products section */
+
+.buy-product{
+    text-align: center;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px; 
+    margin-bottom: 70px;
+}
+
+.product{
+    width: 320px;
+    height: 410px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:10px;
+}
+
+.products .product img{
+    width:300px;
+    height: 256px;
+}
+
+/* Newsletter section */
+
+.newsletter{
+    width: 100%;
+    height: 300px;
+	display: flex;
+    /* flex-wrap: wrap; */
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 2px;
+    margin-bottom: 120px;
+}
+
+.newsletter h1{
+    font-size: 42px;
+}
+
+.newsletter p{
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: #a09898;
+}
+
+.subscribe{
+    max-width: 550px;
+	width: 100%; 
+	position: relative;
+}
+
+.subscribe input{
+    width: 100%;
+	padding: 30px 0px 30px 60px;
+	font-weight: bold;
+}
+
+.subscribe .fas{
+    position: absolute;
+    font-size: 40px;
+    transform:translateY(-150%);
+    margin-left: 15px;
+}
+
+.subscribe .btn{
+    position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: -50px;
+	background: #4dabf7;
+	padding: 15px 20px;
+	border-radius: 25px;
+	font-size: 12px;
+	letter-spacing: 5px;
+	color: #fff;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
