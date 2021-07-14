@@ -79,6 +79,7 @@ body{
     margin-left: 120px;
     margin-right: 80px;
     margin-top:70px;
+    margin-bottom: 100px;
 }
 
 .player{
@@ -106,4 +107,39 @@ body{
 .player-details{
     width: 300px;
     height: 154px;
+}
+
+/* Footer Division */
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 63px;
+}
+
+.footer-image img{
+    width: 483px;
+    height: 110px;
+
+}
+
+.icons{
+    font-size: 16px;
+    margin: 4px;
+    text-decoration: none;
+    color: gray;
+    padding: 6px;
+    background-color: rgba(128, 128, 128, 0.078);
+    border-radius: 8px;
+}
+
+#credit-p{
+    color: gray;
+    font-size: 18px;
+}
+p{
+    color: gray;
+    font-size: 16px;
 }
